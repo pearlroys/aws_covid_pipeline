@@ -25,7 +25,7 @@ The ETL pipeline follows the following architecture:
 # COVID ETL Pipeline Architecture
 
 ## Data Ingestion
-COVID-19 data is collected from our [data source -aws Data Lake](https://aws.amazon.com/covid-19-data-lake/) and stored in Amazon S3 in CSV format. The data includes information on cases, deaths, and vaccinations for each country and state. The data is updated daily, and new data is added to the S3 bucket.
+COVID-19 data is collected from our [data source -AWS Data Lake](https://aws.amazon.com/covid-19-data-lake/) and stored in Amazon S3 in CSV format. The data includes information on cases, deaths, and vaccinations for each country and state. The data is updated daily, and new data is added to the S3 bucket.
 
 ## Data Crawling
 AWS Crawler is used to automatically discover and infer the schema of the data stored in S3. The Crawler scans the S3 bucket for new data and creates tables in the AWS Glue Data Catalog. The Data Catalog is used to manage metadata for the data stored in S3.
