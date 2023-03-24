@@ -1,6 +1,7 @@
 # aws_covid_pipeline
 # COVID ETL Pipeline using Amazon S3, Crawler, Dimension Models, Data Models, Amazon Athena, and AWS Glue
-This project creates an ETL pipeline to process COVID-19 data and store it in Amazon S3 for further analysis. The pipeline consists of six AWS services: Amazon S3, Crawler, Dimension Models, Data Models, Amazon Athena, and AWS Glue.
+This project creates an ETL pipeline to process COVID-19 data and store it in Amazon Redshift for further analysis. The pipeline consists of six AWS services: Amazon S3, Crawler, Amazon Athena, and AWS Glue.
+Dimension Models and Data Models are made using draw.io
  
 <img width="1226" alt="Screenshot 2023-03-24 at 12 30 57" src="https://user-images.githubusercontent.com/103274172/227521857-daa1a5ff-8722-4b59-b74d-c9757ee7e443.png">
 
@@ -24,7 +25,7 @@ The ETL pipeline follows the following architecture:
 # COVID ETL Pipeline Architecture
 
 ## Data Ingestion
-COVID-19 data is collected from our [data source -aws Data Lake] (https://aws.amazon.com/covid-19-data-lake/) and stored in Amazon S3 in CSV format. The data includes information on cases, deaths, and vaccinations for each country and state. The data is updated daily, and new data is added to the S3 bucket.
+COVID-19 data is collected from our [data source -aws Data Lake](https://aws.amazon.com/covid-19-data-lake/) and stored in Amazon S3 in CSV format. The data includes information on cases, deaths, and vaccinations for each country and state. The data is updated daily, and new data is added to the S3 bucket.
 
 ## Data Crawling
 AWS Crawler is used to automatically discover and infer the schema of the data stored in S3. The Crawler scans the S3 bucket for new data and creates tables in the AWS Glue Data Catalog. The Data Catalog is used to manage metadata for the data stored in S3.
