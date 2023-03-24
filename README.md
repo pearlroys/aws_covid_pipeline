@@ -1,4 +1,4 @@
-# aws_covid_pipeline
+# AWS_Covid_Pipeline
 # COVID ETL Pipeline using Amazon S3, Crawler, Dimension Models, Data Models, Amazon Athena, and AWS Glue
 This project creates an ETL pipeline to process COVID-19 data and store it in Amazon Redshift for further analysis. The pipeline consists of six AWS services: Amazon S3, Crawler, Amazon Athena, and AWS Glue.
 Dimension Models and Data Models are made using draw.io
